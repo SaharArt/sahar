@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=El Messiri">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "El Messiri", Arial, Helvetica, sans-serif}
+.rel {font-family: "Raleway", Arial, Helvetica, sans-serif}
+.w3-bar .w3-button {
+  padding: 16px;
+}
+.mySlides {display:none}
+.w3-tag, .fa {cursor:pointer}
+.w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+.w3-row-padding img {margin-bottom: 12px}
+
+.zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+  transition: transform .2s;
+}
+.container {
+  position: relative;
+  /* width: 50%; */
+}
+
+.image {
+  opacity: 1;
+  /* display: block;
+  width: 100%;
+  height: auto; */
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+.text {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+/* i {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+} */
+
+
+</style>
+<body  >
+    
+<!-- <div class="w3-container  w3-center w3-padding-32 w3-pale-blue">
+     <h2 class="w3-wide" >SaharGodrat_Art</h2>
+     <p class="w3-xlarge">به گالری نقاشی سحر خوش آمدید</p>
+</div> -->
+<!-- Links (sit on top) -->
+<div class="w3-top  w3-card">
+        <div class="w3-row w3-large w3-black">
+          <div class="w3-col s3">
+            <a href="#" class="w3-button w3-block">گالری سحر</a>
+          </div>
+          <div class="w3-col s3">
+            <a href="#plans" class="w3-button w3-block">پیشنهاد های من</a>
+          </div>
+          <div class="w3-col s3">
+            <a href="#About" class="w3-button w3-block">درباره من</a>
+          </div>
+          <div class="w3-col s3">
+            <a href="#contact" class="w3-button w3-block">تماس با من</a>
+          </div>
+        </div>
+      </div>
+      
+  <div  style="margin-top:83px"></div>
+  <div id="page" class="w3-content">
+    <!-- home -->
+      <div class="w3-padding-32 " id="Home">
+    <h1 class="w3-container w3-right-align">گالری سحر قدرت</h1>
+
+ <!-- Slideshow -->
+ <div class="w3-container">
+        <div class="w3-display-container mySlides">
+          <img src="https://dl.dropboxusercontent.com/s/f91s790faxjx27j/S%DB%B9%DB%B0%DB%B7%DB%B2%DB%B3-%DB%B1%DB%B8%DB%B2%DB%B1%DB%B2%DB%B2%281%29.jpg"  style="width:100%">
+          <div class="w3-display-topleft w3-container w3-padding-32">
+            <span class="w3-white w3-padding-large w3-animate-bottom">نقطه کوبی</span>
+          </div>
+        </div>
+        <div class="w3-display-container mySlides">
+          <img src="
+          https://dl.dropboxusercontent.com/s/p54zgo3atc71614/S%DB%B9%DB%B0%DB%B7%DB%B2%DB%B3-%DB%B1%DB%B8%DB%B2%DB%B5%DB%B5%DB%B8%281%29.jpg" style="width:100%">
+          <div class="w3-display-middle w3-container w3-padding-32">
+            <span class="w3-white w3-padding-large w3-animate-bottom">تابلو با گل های برجسته</span>
+          </div>
+        </div>
+        <div class="w3-display-container mySlides">
+          <img src="https://dl.dropboxusercontent.com/s/5eul69z0bk4xd2m/S%DB%B9%DB%B0%DB%B7%DB%B2%DB%B3-%DB%B1%DB%B8%DB%B2%DB%B1%DB%B5%DB%B6%281%29.jpg" style="width:100%">
+          <div class="w3-display-topright w3-container w3-padding-32">
+            <span class="w3-white w3-padding-large w3-animate-bottom">نقاشی چهره</span>
+          </div>
+        </div>
+        <div class="w3-display-container mySlides">
+                <img src="https://dl.dropboxusercontent.com/s/nzkncpz6gkcf7wo/S%DB%B9%DB%B0%DB%B7%DB%B2%DB%B3-%DB%B1%DB%B8%DB%B2%DB%B0%DB%B3%DB%B6%281%29.jpg" style="width:100%">
+                <div class="w3-display-topright w3-container w3-padding-32">
+                  <span class="w3-white w3-padding-large w3-animate-bottom">آموزش نقاشی کودکان</span>
+                </div>
+              </div>
+          
+    
+        <!-- Slideshow next/previous buttons -->
+        <div class="w3-container w3-dark-grey w3-padding w3-xlarge">
+          <div class="w3-left" onclick="plusDivs(-1)"><i class="fa fa-arrow-circle-left w3-hover-text-teal"></i></div>
+          <div class="w3-right" onclick="plusDivs(1)"><i class="fa fa-arrow-circle-right w3-hover-text-teal"></i></div>
+        
+          <div class="w3-center">
+            <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+            <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+            <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+            <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+          </div>
+        </div>
+      </div>
+      </div>
+      <!-- plans -->
+      <div class="w3-padding-32 " id="plans">
+  <div class="w3-row w3-container">
+    <div class="w3-center w3-padding-64">
+      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">ما چه چیزی پیشنهاد میدهیم؟</span>
+    </div>
+    <div class="w3-col w3-margin-top m4 w3-light-grey w3-container w3-padding-16 ">
+      <h3 class="w3-right-align">سفارش طراحی چهره در سایزهای مختلف</h3>
+      <button onclick="myFunction('Demo1')" class="w3-btn   w3-left-align"><p> <i class="fa fa-arrow-down w3-text-blue w3-large"></i></p></button>
+      <div id="Demo1" class="w3-margin-top w3-hide">
+      <ul class="w3-ul w3-hoverable  w3-white  w3-center w3-hover-shadow">
+        <li class=" w3-large w3-padding-32">انواع سفارشات شما با بهترین کیفیت و قیمتی مناسب و در هر سایزی پدیرفته میشود.</li>
+      </ul>
+      </div>  
+    </div>
+
+    <div class="w3-col w3-margin-top  m4 w3-grey w3-container w3-padding-16">
+      <h3 class="w3-right-align" >برگزاری کلاس های تخصصی طراحی و نقاشی</h3>
+      <button onclick="myFunction('Demo2')" class="w3-btn   w3-left-align"><p> <i class="fa fa-arrow-down w3-text-blue w3-large"></i></p></button>
+      <div id="Demo2" class=" w3-margin-top w3-hide">
+      <ul class="w3-ul  w3-hoverable w3-white  w3-center w3-hover-shadow">
+        <li class=" w3-large w3-padding-32">آموزش طراحی چهره به سبک سیاه قلم برای تمامی سنین</li>
+        <li class="w3-padding-16 w3-large">آمورش طراحی با مداد از مبتدی تا پیشرفته</li>
+        <li class="w3-padding-16 w3-large">آموزش تابلوهای نقاشی برجسته</li>
+        <li class="w3-padding-16 w3-large">آموزش نقاشی روی سنگ</li>
+        <li class="w3-padding-16 w3-large">آموزش نقطه کوبی</li>
+        <li class="w3-padding-16 w3-large">آموزش ویترای</li>
+      </ul> 
+      </div> 
+    </div>
+
+    <div class="w3-col w3-margin-top  m4 w3-dark-grey w3-container w3-padding-16">
+      <h3 class="w3-right-align">کلاس های ویژه کودکان 4 سال به بالا</h3>
+      <button onclick="myFunction('Demo3')" class="w3-btn   w3-left-align"><p> <i class="fa fa-arrow-down w3-text-blue w3-large"></i></p></button>
+      <div id="Demo3" class=" w3-margin-top w3-hide">
+      <ul class="w3-ul w3-hoverable  w3-white  w3-center w3-hover-shadow">
+        <li class=" w3-large w3-padding-32">آموزش سبک و تکنیک های مختلف نقاشی</li>
+        <li class="w3-padding-16 w3-large">آموزش استفاده ار ابزارهایی مانند:
+          مداد رنگی،گواش،ابرنگ،رنگ روغن،پاستل
+        </li>
+      </ul> 
+      </div> 
+    </div>
+</div>
+</div>
+
+<!-- About  -->
+<div class="w3-padding-32 " id="About">
+<div class="w3-center w3-padding-64">
+  <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">درباره من</span>
+</div>
+<div class="w3-container">
+<div class="w3-card ">
+  <div class="container" >
+  <img src="https://www.w3schools.com/howto/img_avatar2.png" class="image" width="900" height="600" alt="John" style="width:100%">
+  <div class="middle">
+      <div class="text rel">Sahar Godrat</div>
+    </div>
+  </div>
+  <div class="w3-container">
+    <h3 class=" w3-right-align ">سحر قدرت</h3>
+    <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
+    <p class="w3-large w3-opacity w3-right-align ">طراح و نقاش</p>
+    <p class="w3-large w3-right-align"> دارای تحصیلات دانشگاهی در رشته کارشناسی هنر از دانشگاه ....  و فوق لیسانس هنر از دانشگاه ... هستم.  </p>
+    
+    <p><a  href="#" class="w3-button w3-large w3-black w3-block"><i class="fa fa-envelope"></i> Contact</a></p>
+  </div>
+</div>
+<h2 class="w3-container w3-right-align w3-padding-32"  > مهارت های من</h2>
+<p class="w3-wide"><i class="fa fa-camera w3-margin-right"></i>عکاسی</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:90%">90%</div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-paint w3-margin-right"></i>طراحی چهره</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:95%">95%</div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-photo w3-margin-right"></i>نقاشی</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:95%">95%</div>
+      </div>
+      </div>
+      </div>
+       <!-- Portfolio Section -->
+  <div class="w3-padding-32 w3-container " id="portfolio">
+      <h2 class="w3-text-grey w3-right-align w3-padding-32">نمونه کارهای من</h2>
+      <hr class="w3-opacity">
+      <p class="w3-right-align"><b>روی عکس ها کلیک کنید تا آنها را بزرگتر ببینید.</b></p>
+    
+  
+      <!-- Grid for photos -->
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div  class="w3-col s6">
+          <img src="https://dl.dropboxusercontent.com/s/j6x77i5w7f3ts3z/S%DB%B9%DB%B0%DB%B7%DB%B2%DB%B3-%DB%B1%DB%B8%DB%B2%DB%B1%DB%B3%DB%B7%281%29.jpg"
+          onclick="onClick(this)" alt="گالری سحر قدرت" class="zoom" style="width:100%">
+          <img src="https://dl.dropboxusercontent.com/s/ft6nj2rkt5qjvzq/S%DB%B9%DB%B0%DB%B7%DB%B2%DB%B3-%DB%B1%DB%B8%DB%B2%DB%B3%DB%B5%DB%B1%281%29.jpg"
+          onclick="onClick(this)" alt="گالری سحر قدرت" class="zoom" style="width:100%">
+          <img src="https://dl.dropboxusercontent.com/s/6jkgzshlevv2z4k/S%DB%B9%DB%B0%DB%B7%DB%B2%DB%B3-%DB%B1%DB%B8%DB%B2%DB%B5%DB%B4%DB%B9%281%29.jpg"
+          onclick="onClick(this)" alt="گالری سحر قدرت" class="zoom" style="width:100%">
+          <img src="https://dl.dropboxusercontent.com/s/3omqoi5prm3c4tk/S%DB%B9%DB%B0%DB%B7%DB%B2%DB%B3-%DB%B1%DB%B8%DB%B2%DB%B6%DB%B1%DB%B2%281%29.jpg" 
+          onclick="onClick(this)" alt="گالری سحر قدرت" class="zoom" style="width:100%">
+          <img src="https://dl.dropboxusercontent.com/s/bsc2d4vg02dui6b/S%DB%B9%DB%B0%DB%B7%DB%B2%DB%B3-%DB%B1%DB%B8%DB%B1%DB%B9%DB%B5%DB%B0%281%29.jpg"
+          onclick="onClick(this)" alt="گالری سحر قدرت" class="zoom" style="width:100%">
+          <img src="https://dl.dropboxusercontent.com/s/d97sdvm3be9jx0q/S%DB%B9%DB%B0%DB%B7%DB%B2%DB%B3-%DB%B1%DB%B8%DB%B2%DB%B0%DB%B5%DB%B7%281%29.jpg"
+          onclick="onClick(this)" alt="گالری سحر قدرت" class="zoom" style="width:100%">
+        </div>
+  
+        <div class="w3-col s6">
+          <img src="https://dl.dropboxusercontent.com/s/t0sl7kc5hacg8ua/S%DB%B9%DB%B0%DB%B7%DB%B2%DB%B3-%DB%B1%DB%B8%DB%B2%DB%B1%DB%B2%DB%B7%281%29.jpg"
+          onclick="onClick(this)" alt="گالری سحر قدرت" class="zoom" style="width:100%">
+          <img src="https://dl.dropboxusercontent.com/s/wbjx940r6h0n04n/S%DB%B9%DB%B0%DB%B7%DB%B2%DB%B3-%DB%B1%DB%B8%DB%B2%DB%B1%DB%B4%DB%B8%281%29.jpg" 
+          onclick="onClick(this)" alt="گالری سحر قدرت" class="zoom" style="width:100%">
+          <img src="https://dl.dropboxusercontent.com/s/93wff9kgiql822q/S%DB%B9%DB%B0%DB%B7%DB%B2%DB%B3-%DB%B1%DB%B8%DB%B2%DB%B2%DB%B0%DB%B4%281%29.jpg"
+          onclick="onClick(this)" alt="گالری سحر قدرت" class="zoom" style="width:100%">
+          <img src="https://dl.dropboxusercontent.com/s/0sddgdu26rzfpxj/S%DB%B9%DB%B0%DB%B7%DB%B2%DB%B3-%DB%B1%DB%B8%DB%B2%DB%B2%DB%B0%DB%B8%281%29.jpg"
+          onclick="onClick(this)" alt="گالری سحر قدرت" class="zoom" style="width:100%">
+          <img src="https://dl.dropboxusercontent.com/s/6t30cs7q313swcb/S%DB%B9%DB%B0%DB%B7%DB%B2%DB%B3-%DB%B1%DB%B8%DB%B2%DB%B3%DB%B0%DB%B5%281%29.jpg"
+          onclick="onClick(this)" alt="گالری سحر قدرت" class="zoom" style="width:100%">
+          <img src="https://dl.dropboxusercontent.com/s/n72sp4fxy6y805i/S%DB%B9%DB%B0%DB%B7%DB%B2%DB%B3-%DB%B1%DB%B8%DB%B2%DB%B0%DB%B2%DB%B8%281%29.jpg"
+          onclick="onClick(this)" alt="گالری سحر قدرت" class="zoom" style="width:100%">
+          <!-- <img src="https://dl.dropboxusercontent.com/s/24h6qv1knydzul8/S%DB%B9%DB%B0%DB%B7%DB%B2%DB%B3-%DB%B1%DB%B8%DB%B2%DB%B6%DB%B5%DB%B0%281%29.jpg" style="width:100%"> -->
+        </div>
+      <!-- End photo grid -->
+      </div>
+    <!-- End Portfolio Section -->
+    </div>
+    <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0"  onclick="this.style.display='none'">
+      <span class="w3-button w3-black w3-xlarge  w3-display-topright">×</span>
+      <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent  w3-padding-64">
+        <img id="img01" class="w3-image">
+        <p id="caption"></p>
+      </div>
+    </div>
+    <!-- Contact Section -->
+    <div class="w3-padding-32  " id="contact">
+      
+<div class="w3-container w3-dark-grey" style="padding:64px 16px" id="contact">
+  
+    <h3 class="w3-center">ارتباط با من</h3>
+    <p class="w3-center w3-large">در شبکه های اجتماعی به من پیام دهید.</p>
+  
+    <div class="w3-row-padding">
+    <div class="w3-half  " style="margin-top:48px">
+      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Gorgan,Golestan</p>
+      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +98 09361860630</p>
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
+      <i class=" w3-xxxlarge zoom  fa fa-facebook-official w3-hover-opacity"></i>
+    <i class=" w3-xxxlarge zoom w3-margin-left fa fa-instagram w3-hover-opacity"></i>
+    <i class=" w3-xxxlarge zoom w3-margin-left fa fa-telegram w3-hover-opacity"></i>
+  </div>
+  <div class="w3-half" style="margin-top:48px">
+      <img src="https://dl.dropboxusercontent.com/s/ls1ritnfdew7mqq/S%DB%B9%DB%B0%DB%B7%DB%B2%DB%B3-%DB%B1%DB%B8%DB%B2%DB%B5%DB%B4%DB%B1%281%29.jpg" class="w3-image zoom   w3-round" style="width:100%">
+  </div>
+</div>
+  </div>
+    </div>
+ 
+
+    </div>
+    <!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+    <a href="#Home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <div class="w3-xlarge zoom w3-section">
+      <i class="fa fa-facebook-official zoom w3-hover-opacity"></i>
+      <i class="fa fa-instagram zoom w3-hover-opacity"></i>
+      <i class="fa fa-telegram zoom w3-hover-opacity"></i>
+      <i class="fa fa-twitter zoom w3-hover-opacity"></i>
+      
+    </div>
+    <p class="rel" >Powered by <a href="#" title="W3.CSS" target="_blank" class="w3-hover-text-green">webone</a></p>
+  </footer>
+      
+      
+      
+<!-- <script>
+  window.onscroll = function() {myFunction()};
+      
+      var navbar = document.getElementById("topnav");
+      var sticky = navbar.offsetTop;
+      
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("w3-top")
+        } else {
+          navbar.classList.remove("w3-top");
+        }
+    }
+</script> -->
+<script>
+   // Slideshow
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demodots");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+
+</script>
+
+
+</body>
+</html>
